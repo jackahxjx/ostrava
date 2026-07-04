@@ -2915,7 +2915,7 @@ local Library do
                     ImageColor3 = FromRGB(196, 231, 255),
                     ScaleType = Enum.ScaleType.Fit,
                     BorderColor3 = FromRGB(0, 0, 0),
-                    Size = UDim2New(0, 20, 0, 20),
+                    Size = UDim2New(0, 25, 0, 25),
                     AnchorPoint = Vector2New(1, 0.5),
                     Image = LoadAsset("Texture_5"),
                     BackgroundTransparency = 1,

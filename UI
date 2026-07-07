@@ -4320,7 +4320,11 @@ local Library do
                     end
                 end
 
-                if NewTween then Library:Connect(NewTween.Tween.Completed, function() Debounce = false Items["ColorpickerWindow"].Instance.Visible = Bool end) else Debounce = false Items["ColorpickerWindow"].Instance.Visible = Bool end
+                Library:Connect(NewTween.Tween.Completed, function()
+                    Debounce = false
+                    Items["ColorpickerWindow"].Instance.Visible = Bool
+                end)                
+            end
 
             function Colorpicker:Get()
                 return Colorpicker.Color, Colorpicker.Alpha
